@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
+import Login from "../pages/Login";
 
 
 const router = createBrowserRouter([
@@ -15,10 +16,10 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
                 //loader: ()=> fetch("https://tourism-management-server-tau.vercel.app/information")
             },
-            // {
-            //     path: '/login',
-            //     element: <Login></Login>
-            // },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
             // {
             //     path: '/register',
             //     element: <Register></Register>
