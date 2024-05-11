@@ -21,9 +21,10 @@ const Header = () => {
     const links = <>
 
         <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/">Home</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/allSpots">All Tourists Spot</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/addSpots">Add Tourists Spot</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/myList">My List </NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/availableFood">Available Foods</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/addFood">Add Food</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/manageFood">Manage Foods</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "btn text-green-600 border-2 border-green-500" : "text-neutral-900 text-opacity-80 text-lg font-normal font-['Work Sans']"} to="/requestFood">Food Request</NavLink></li>
 
 
     </>
