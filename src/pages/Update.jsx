@@ -26,7 +26,7 @@ const Update = () => {
         const newInfo = { foodName, imageUrl, quantity, location, time, notes, donatorName, email, donatorImage, status }
         console.log(newInfo)
         //send to the server
-        fetch(`http://localhost:5000/food_info/${food._id}`, {
+        fetch(`https://food-unity-server-tawny.vercel.app/food_info/${food._id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'

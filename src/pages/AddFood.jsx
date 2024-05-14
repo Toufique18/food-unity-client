@@ -28,7 +28,7 @@ const AddFood = () => {
 
         console.log(newInfo)
         //sent to server
-        fetch("http://localhost:5000/food_info", {
+        fetch("https://food-unity-server-tawny.vercel.app/food_info", {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -40,7 +40,7 @@ const AddFood = () => {
                 console.log(data);
                 if (data.insertedId) {
                     // If data inserted successfully in the first collection, send to the second collection
-                    fetch("http://localhost:5000/available_food", {
+                    fetch("https://food-unity-server-tawny.vercel.app/available_food", {
                         method: 'POST',
                         headers: {
                             'Content-type': 'application/json'

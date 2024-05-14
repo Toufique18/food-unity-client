@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element: <Home></Home>,
-                loader: ()=> fetch("http://localhost:5000/food_info")
+                loader: ()=> fetch("https://food-unity-server-tawny.vercel.app/food_info")
 
             },
             {
@@ -43,13 +43,13 @@ const router = createBrowserRouter([
             {
                 path: '/availableFood',
                 element: <AvailableFood></AvailableFood>,
-                loader: ()=> fetch("http://localhost:5000/food_info")
+                loader: ()=> fetch("https://food-unity-server-tawny.vercel.app/food_info")
 
             },
             {
                 path: '/details/:_id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
-                loader: ()=> fetch("http://localhost:5000/food_info")
+                loader: ()=> fetch("https://food-unity-server-tawny.vercel.app/food_info")
 
             },
             {
@@ -59,8 +59,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/update/:id',
-                element: <Update></Update>,
-                loader: ()=> fetch("http://localhost:5000/food_info")
+                element: <PrivateRoute><Update></Update></PrivateRoute>,
+                loader: ()=> fetch("https://food-unity-server-tawny.vercel.app/food_info")
 
             },
             

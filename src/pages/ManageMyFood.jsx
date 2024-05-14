@@ -11,7 +11,7 @@ const ManageMyFood = () => {
     //console.log(user);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/food_info/${user?.email}`)
+        fetch(`https://food-unity-server-tawny.vercel.app/food_info/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data)
@@ -31,7 +31,7 @@ const ManageMyFood = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/food_info/${_id}`, {
+                fetch(`https://food-unity-server-tawny.vercel.app/food_info/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
