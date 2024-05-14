@@ -42,7 +42,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl"><img className="h-6" src={food} alt="" /></a>
+                    <a className="btn btn-ghost text-xl"><img className="animate-pulse h-6" src={food} alt="" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -55,7 +55,7 @@ const Header = () => {
                         data-tooltip-content={userName}
                         data-tooltip-place="top" >
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
+                            <div className="w-10 rounded-full animate-pulse">
                                 <img alt="Tailwind CSS Navbar component" src={userImage} />
                                 <Tooltip id="my-tooltip" />
                             </div>

@@ -68,9 +68,9 @@ const ManageMyFood = () => {
                         
                         <td className="px-4 py-2 flex gap-2 items-center">
                             <Link to={`/update/${info._id}`}>
-                                <button className="btn btn-primary">Update</button>
+                                <button className="btn btn-primary bg-purple-500 text-white">Update</button>
                             </Link>
-                            <button onClick={() => handleDelete(info._id)} className="btn btn-primary">Delete</button>
+                            <button onClick={() => handleDelete(info._id)} className="btn btn-primary bg-purple-500 text-white">Delete</button>
                         </td>
                     </tr>
                 ))}
