@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import FoodCard from "../components/foodCard/FoodCard";
 import GetInvolvedSection from "../components/GetInvolvedSection";
+import PartnerOrganizations from "../components/PartnerOrganizations";
 
 const Home = () => {
     const foods = useLoaderData();
@@ -13,6 +14,7 @@ const Home = () => {
                 {foods.map(food => <FoodCard key={food._id} food={food}></FoodCard>)}
             </div>
             <GetInvolvedSection></GetInvolvedSection>
+            <PartnerOrganizations></PartnerOrganizations>
         </div>
     );
 };
