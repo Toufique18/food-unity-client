@@ -1,5 +1,5 @@
 # React + Vite
-[FoodUnity]([#](https://food-unity-8b66e.web.app/)) 
+[FoodUnity](https://food-unity-8b66e.web.app) 
 
 ## Technologies Used
 
